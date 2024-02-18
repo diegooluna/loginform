@@ -125,6 +125,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 90%;
 }
 .container{
     display: flex;
@@ -266,4 +267,75 @@ a:hover{
 .loginlink{
     padding: 6px;
     margin-top: 10px;
+}
+/* Pantalla de hasta 600px */
+@media screen and (max-width: 600px) {
+    body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .backgroundanimation span {
+        width: 200px;
+        height: 200px;
+    }
+    .container {
+        width: 300px;
+        min-height: 300px;
+        padding: 1rem;
+    }
+}
+
+/* Pantalla de hasta 450px */
+@media screen and (max-width: 450px) {
+    body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .backgroundanimation span {
+        width: 150px;
+        height: 150px;
+    }
+    .container {
+        width: 250px;
+        min-height: 250px;
+        padding: 0.5rem;
+    }
+}
+
+/* Pantalla de hasta 350px */
+@media screen and (max-width: 350px) {
+    body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .backgroundanimation span {
+        width: 100px;
+        height: 100px;
+    }
+    .container {
+        width: 200px;
+        min-height: 200px;
+        padding: 0.25rem;
+    }
 }
